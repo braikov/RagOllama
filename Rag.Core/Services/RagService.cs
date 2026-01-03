@@ -56,6 +56,8 @@ public class RagService
         Answer:
         """;
 
+        Console.WriteLine($"Prompt: {prompt}");
+
         return await _llm.AskAsync(prompt, ct).ConfigureAwait(false);
     }
 }
