@@ -44,6 +44,7 @@ public class RagService
         foreach (var chunk in retrieved)
         {
             contextBuilder.AppendLine($"[score:{chunk.Score:F4}] {chunk.Text}");
+            Console.WriteLine($"[score:{chunk.Score:F4}] {chunk.Text}");
         }
 
         var prompt = $"""
